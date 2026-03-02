@@ -59,6 +59,7 @@ int main()
 	int dias = 0;
 	int horas = 0;
 	int minutos = 0;
+	int segundos = 0;
 
 	cout << "Digite seu nome: ";
 	cin >> nome;
@@ -67,9 +68,48 @@ int main()
 	dias = idade * 365;
 	horas = dias * 24;
 	minutos = horas  * 60;
+	segundos = minutos * 60;
 	cout << "Sua idade em dias e: " << dias << endl;
 	cout << "Sua idade em horas e: " << horas << endl;
 	cout << "Sua idade em minutos e: " << minutos << endl;
+	cout << "Sua idade em segundos e: " << segundos << endl;
+
+	cout << "Qualquer tecla para continuar...";
+	system("pause");
+	system("cls");
+
+	cout << "Exercicio 2 - Conversao de Temperatura" << endl;
+	cout << "======================================" << endl;
+
+	double celsius = 0.0;
+	double fahrenheit = 0.0;
+	double kelvin = 0.0;
+
+	cout << "Digite a temperatura em Celsius: ";
+	cin >> celsius;
+
+	fahrenheit = celsius * 1.8 + 32;
+	kelvin = celsius + 273.15;
+
+	cout << "Temperatura em Fahrenheit: " << fahrenheit << endl;
+	cout << "Temperatura em Kelvin: " << kelvin << endl;
+
+	cout << "Qualquer tecla para continuar...";
+	system("pause");
+	system("cls");
+
+	cout << "Exercicio 4 - Ponteiro na Pratica" << endl;
+	cout << "=================================" << endl;
+
+	int numero = 10;
+
+	cout << "Valor original da variavel: " << numero << endl;
+	cout << "Endereco da variavel: " << &numero << endl;
+
+	int* ptr = &numero;
+	*ptr = (*ptr) * 2;
+
+	cout << "Novo valor da variavel: " << numero << endl;
 
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
